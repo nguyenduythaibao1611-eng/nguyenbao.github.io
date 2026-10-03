@@ -1,4 +1,4 @@
-<div class="beta-products-list">
+<!-- <div class="beta-products-list">
 	<h4>New Products</h4>
 	<div class="beta-products-details">
 		<p class="pull-left">438 styles found</p>
@@ -9,4 +9,17 @@
 			<%- include('product-card', { product }) %>
 		<% }) %>
 	</div>
-</div>
+</div> -->
+
+<section class="beta-products-list" aria-labelledby="new-products-title">
+    <h2 id="new-products-title">New Products</h2>
+    <p class="beta-products-details"><%= products.length %> styles found</p>
+    <div class="product-list">
+        <% if (products.length === 0) { %>
+            <p class="empty-products">No new products found.</p>
+        <% } %>
+        <% products.forEach(product => { %>
+            <%- include('product-card', { product }) %>
+        <% }) %>
+    </div>
+</section>

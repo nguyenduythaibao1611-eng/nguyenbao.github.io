@@ -15,5 +15,13 @@ const topProducts = [
   { name: "Bánh kem dâu",    price: 250000, image: "banhkem-dau.jpg" },
   { name: "Pizza",           price: 120000, image: "pizza.jpg" }
 ];
+const slide = [
+  { image: "banner1.jpg" },
+  { image: "banner2.jpg" },
+  { image: "banner3.jpg" },
+  { image: "banner4.jpg" },
+];
 
-module.exports = { newProducts, topProducts };
+
+
+module.exports = { newProducts, topProducts, slide };

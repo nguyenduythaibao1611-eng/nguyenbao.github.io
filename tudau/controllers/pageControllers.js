@@ -1,7 +1,7 @@
-const { newProducts, topProducts } = require('../models/productModel');
+const { newProducts, topProducts, slide } = require('../models/productModel');
 
 exports.home = (req, res) => {
-    res.render('index', { newProducts, topProducts })
+    res.render('index', { newProducts, topProducts, slide });
 }
 exports.about = (req, res) => {
     res.render('about')
